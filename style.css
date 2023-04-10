@@ -1,0 +1,234 @@
+@import url(
+"https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    gap: 30px;
+    background-color: rgb(231, 231, 231);
+}
+header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+.heading{
+    color: green;
+    font-weight: 500;
+}
+.container{
+    height: 600px;
+    width: 500px;
+    box-shadow: 8px 8px 15px rgb(128, 128, 128);
+    background-color: #f5f5f5;
+    position: relative;
+    overflow: hidden;
+}
+.btn{
+   height: 60px;
+   width: 300px;
+   margin: 20px auto;
+   box-shadow: 10px 10px 20px rgb(254, 215, 188);
+   border-radius: 40px;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+.login, .signup{
+    cursor: pointer;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    position: relative;
+}
+.slider{
+    height: 60px;
+    width: 150px;
+    border-radius: 40px;
+    background: linear-gradient(to right, rgb(255, 195, 110), rgb(255, 146, 91));
+    position: absolute;
+    top: 20px;
+    left: 100px;
+    transition: all 0.5s ease-in-out;
+}
+.moveslider{ /* to move to signup page */
+    left: 250px;
+}
+.form-section{ 
+    padding: 20px 0;
+    display: flex;
+    height: 500px;
+    width: 1000px;
+    position: relative;
+    left: 0px;
+    transition: all 0.5s ease-in-out;
+}
+.moveform-section{ /* to move form to signup page */
+    left: -500px;
+}
+.login-form, .signup-form{ /* when we move from login to signup or vice-versa, w/h should be half */
+    height: 100%;
+    width: 500px;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 40px;
+}
+.login-form{ /* gap between input, its like giving margin between input */
+    gap: 30px;
+}
+.signup-form{
+    gap: 30px;
+}
+.input{
+    font-size: 18px;
+    height: 60px;
+    width: 400px;
+    border-radius: 40px;
+    border: none;
+    outline: none;
+    color: rgb(47, 44, 44);
+    background-color: rgb(240, 240, 240);
+    padding-left: 15px;
+    box-shadow: 1px 1px 2px rgb(128, 128, 128);
+}
+.login-btn, .signup-btn{
+    cursor: pointer;
+    font-size: 20px;
+    border: none;
+    background: linear-gradient(to right,rgb(255, 195, 110),rgb(255, 146, 91));
+    height: 60px;
+    width: 150px;
+    border-radius: 50px;
+}
+
+/* For Responsiveness of the page */
+
+@media screen and (max-width: 650px) {
+	.container {
+		height: 600px;
+		width: 300px;
+	}
+
+	.btn {
+		height: 50px;
+		width: 200px;
+		margin: 20px auto;
+	}
+
+	.login,
+	.signup {
+		font-size: 19px;
+	}
+
+	.slider {
+		height: 50px;
+		width: 100px;
+		left: 50px;
+	}
+
+	.moveslider {
+		left: 150px;
+	}
+
+	.form-section {
+		height: 500px;
+		width: 600px;
+	}
+
+	.moveform-section {
+		left: -300px;
+	}
+
+	.login-form,
+	.signup-form {
+		height: 100%;
+		width: 300px;
+	}
+
+	.input {
+		height: 50px;
+		width: 250px;
+		font-size: 15px;
+	}
+
+	.login-btn, .signup-btn {
+		height: 50px;
+		width: 130px;
+		font-size: 19px;
+	}
+} 
+
+@media screen and (max-width: 320px) {
+	.container {
+		height: 600px;
+		width: 250px;
+	}
+
+	.heading {
+		font-size: 30px;
+	}
+
+	.btn {
+		height: 50px;
+		width: 200px;
+		margin: 20px auto;
+	}
+
+	.login,
+	.signup {
+		font-size: 19px;
+	}
+
+	.slider {
+		height: 50px;
+		width: 100px;
+		left: 27px;
+	}
+
+	.moveslider {
+		left: 127px;
+	}
+
+	.form-section {
+		height: 500px;
+		width: 500px;
+	}
+
+	.moveform-section {
+		left: -250px;
+	}
+
+	.login-form,
+	.signup-form {
+		height: 100%;
+		width: 250px;
+	}
+
+	.input {
+		height: 50px;
+		width: 220px;
+		font-size: 15px;
+	}
+
+	.login-btn, .signup-btn {
+		height: 50px;
+		width: 130px;
+		font-size: 19px;
+	}
+} 
