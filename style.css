@@ -65,7 +65,7 @@ header{
     left: 100px;
     transition: all 0.5s ease-in-out;
 }
-.moveslider{ /* to move to signup page */
+.moveslider{ 
     left: 250px;
 }
 .form-section{ 
@@ -77,10 +77,10 @@ header{
     left: 0px;
     transition: all 0.5s ease-in-out;
 }
-.moveform-section{ /* to move form to signup page */
+.moveform-section{ 
     left: -500px;
 }
-.login-form, .signup-form{ /* when we move from login to signup or vice-versa, w/h should be half */
+.login-form, .signup-form{ 
     height: 100%;
     width: 500px;
     display: flex;
@@ -89,7 +89,7 @@ header{
     flex-direction: column;
     padding: 0 40px;
 }
-.login-form{ /* gap between input, its like giving margin between input */
+.login-form{ 
     gap: 30px;
 }
 .signup-form{
